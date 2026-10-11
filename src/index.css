@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* MR Delights – Expense Tracker theme (Tailwind v4, CSS-first: no config file).
+   Every colour / font used in the app comes from here, so matching the ERP later
+   means editing only this block. */
+@theme {
+  /* brand */
+  --color-side: #1a2b1c;        /* sidebar, dark panels */
+  --color-brand: #2f6b42;       /* primary green */
+  --color-brand-2: #3d7a4f;     /* lighter green: focus, hover accents */
+  --color-brand-dark: #265a37;  /* primary hover */
+  --color-gold: #d4af37;
+  --color-gold-dark: #7d5f0c;
+  --color-accent: #b85a0c;      /* page headings */
+
+  /* surfaces + text */
+  --color-cream: #f6f2e8;       /* page background */
+  --color-paper: #fffefa;       /* cards */
+  --color-sand: #efe9da;        /* hover tint, badges */
+  --color-sand-2: #faf7ee;      /* filter bar, soft panels */
+  --color-ink: #1d261f;
+  --color-muted: #5c5546;
+  --color-line: #e0dbd0;        /* card borders */
+  --color-edge: #c9c2b1;        /* input borders */
+  --color-danger: #b3261e;
+
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-card: 0 4px 18px rgba(26, 43, 28, 0.06);
+
+  --animate-toast-in: toast-in 0.25s ease-out;
+  @keyframes toast-in {
+    from { transform: translateY(12px); opacity: 0; }
+  }
+}
+
+@layer base {
+  body {
+    @apply min-h-screen min-w-[320px] bg-cream font-sans text-sm leading-snug text-ink;
+  }
+  /* Tailwind v4 buttons use the default cursor; restore the pointer */
+  button:not(:disabled) { cursor: pointer; }
+  button:disabled { cursor: not-allowed; opacity: 0.55; }
+  :focus-visible { outline: 2px solid rgb(61 122 79 / 0.55); outline-offset: 2px; }
+}
