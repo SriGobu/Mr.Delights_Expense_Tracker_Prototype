@@ -3,13 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#1a2b1c" />
-    <link rel="icon" href="/logo.PNG" />
+
+    <!-- Browser / tab icon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+
+    <!-- iOS "Add to Home Screen" -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="MR Expenses" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Page Title -->
     <title>MR Delights — Expense Tracker</title>
+
+    <!-- SEO Description -->
     <meta
       name="description"
-      content="Expense tracker prototype for the MR Delights ERP."
+      content="Expense tracker for MR Delights — record spending, watch budgets and see where the money goes."
     />
+    <!-- Internal tool: keep it out of search results -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MR Delights — Expense Tracker" />
+    <meta
+      property="og:description"
+      content="Record spending, watch budgets and see where the money goes."
+    />
+    <meta
+      property="og:image"
+      content="https://mr-delights-expense-tracker-prototy.vercel.app/previewLogo.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://mr-delights-expense-tracker-prototy.vercel.app/"
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MR Delights — Expense Tracker" />
+    <meta
+      name="twitter:description"
+      content="Record spending, watch budgets and see where the money goes."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mr-delights-expense-tracker-prototy.vercel.app/previewLogo.png"
+    />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

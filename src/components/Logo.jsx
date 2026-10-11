@@ -18,7 +18,7 @@ export default function Logo({ size = 44 }) {
     <img
       src={LOGO_SRC}
       alt={`${COMPANY.NAME} logo`}
-      className="flex-none rounded-full border-2 border-gold/70 bg-[#02290b] object-cover shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
+      className="flex-none rounded-full bg-[#02290b] object-cover shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
       style={{ width: size, height: size }}
       onError={() => setFailed(true)}
     />
